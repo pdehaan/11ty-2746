@@ -1,0 +1,6 @@
+{% if sound %}
+  {%- set mySound = sounds | getSound(sound) -%}
+  <h3>{{ mySound.title }}</h3>
+  <p>{{ mySound.subtitle }}</p>
+  <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+{% endif %}
